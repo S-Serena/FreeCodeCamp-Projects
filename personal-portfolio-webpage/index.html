@@ -3,88 +3,121 @@
 <head>
     <meta charset="UFT-8">
     <title>personal-portfolio</title>
-    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/c74d9e0834.js"></script>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <!--<script src="http://cdn.jquerytools.org/1.2.6/full/jquery.tools.min.js"></script>-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <link href="./index.css" rel="stylesheet">
 </head>
 <body>
-<header id="banner">
-    <div>
-        <a href="">
-            <img src="">
+<!--header section-->
+<header id="banner" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <a href="#top" class="scrollable>
+            <img src="images/qlip.jpg" alt="qlip | UI/UX Design and Development"
+        title="qlip | UI/UX Design and Development"/>
         </a>
-        <button>
-
+        <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span
+                class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
         </button>
-        <nav>
-            <ul>
-                <li>
-                    <a>ABOUT</a>
-                </li>
-                <li>
-                    <a>PORTFOLIO</a>
-                </li>
-                <li>
-                    <a>CONTACT</a>
-                </li>
+        <nav id="navbar" role="navigation" class="collapse navbar-collpase">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#top" class="scrollable">About</a></li>
+                <li><a href="#portfolio" class="scrollable">Portfolio</a></li>
+                <li><a href="#contact" class="scrollable">Contact</a></li>
             </ul>
         </nav>
     </div>
 </header>
+<a id="top" name="home"></a>
+
+<!--<header id="banner" class="navbar navbar-default navbar-fixed-top">-->
+<!--<div class="container"><a href="#top" class="scrollable"><img src="images/qlip.jpg"-->
+<!--alt="qlip | UI/UX Design and Development"-->
+<!--title="qlip | UI/UX Design and Development"/></a>-->
+<!--<button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false"-->
+<!--class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span-->
+<!--class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>-->
+<!--<nav id="navbar" role="navigation" class="collapse navbar-collapse">-->
+<!--<ul class="nav navbar-nav navbar-right">-->
+<!--<li><a href="#top" class="scrollable">About</a></li>-->
+<!--<li><a href="#portfolio" class="scrollable">Portfolio</a></li>-->
+<!--<li><a href="#contact" class="scrollable">Contact</a></li>-->
+<!--</ul>-->
+<!--</nav>-->
+<!--</div>-->
+<!--</header>-->
+<!--&lt;!&ndash; end header&ndash;&gt;<a id="top" name="home"></a>-->
 <!--<main section>-->
-<header>
-    <p>Front-End Developer and UX/UI designer, with practical experience in project management, branding strategy,
-        and creative direction; devoted to functional programming and information architecture.
-    </p>
-    <hr>
-    <span>
-        Web Developer - User Experience Designer - Graphic Artist
-    </span>
-</header>
-<!--<portfolio section>-->
-<section id="portfolio">
-    <h2>PORTFOLIO</h2>
-    <hr>
-    <ul>
-        <li><img src="http://qlip.in/images/YMCA-Realtor-Donation-3.jpg" alt=""/></li>
-        <li><img src="http://qlip.in/images/webcaballero.jpg" alt=""/></li>
-        <li><img src="http://qlip.in/images/webmarqas.jpg" alt=""/></li>
-        <li><img src="http://qlip.in/images/webbrandaxis.jpg" alt=""/></li>
-        <li><img src="http://qlip.in/images/panacea1.jpg" alt=""/></li>
-        <li><img src="http://qlip.in/images/webgatomalo.jpg" alt=""/></li>
-    </ul>
-</section>
-<!--<contact section>-->
-<section id="contact">
-    <h2>CONTACT ME</h2>
-    <hr>
-    <div>
-        <form id="contact-form">
-            <div class="form-item">
-                <input id="name" type="text" placeholder="Name" required>
-                <label for="name">Name</label>
+<main>
+    <header>
+        <div class="intro-text">
+            <p>Front-End Developer and UX/UI designer, with practical experience in project management, branding
+                strategy,
+                and creative direction; devoted to functional programming and information architecture.
+            </p>
+            <hr class="star-bright"/>
+            <span class="skills">Web Developer - User Experience Designer - Graphic Artist</span>
+        </div>
+        <img src="images/avatar.jpg"
+             alt="A picture of Justin looking at San Francisco from across the Golden Gate Bridge"/>
+    </header>
+    <!--<portfolio section>-->
+    <section id="portfolio">
+        <h2>PORTFOLIO</h2>
+        <hr class="star-dark">
+        <ul class="grid">
+            <li><img src="images/YMCA-Realtor-Donation-3.jpg" alt=""/></li>
+            <li><img src="images/webcaballero.jpg" alt=""/></li>
+            <li><img src="images/webmarqas.jpg" alt=""/></li>
+            <li><img src="images/webbrandaxis.jpg" alt=""/></li>
+            <li><img src="images/panacea1.jpg" alt=""/></li>
+            <li><img src="images/webgatomalo.jpg" alt=""/></li>
+        </ul>
+    </section>
+    <!--<contact section>-->
+    <section id="contact">
+        <h2>CONTACT ME</h2>
+        <hr>
+        <div>
+            <form id="contact-form">
+                <div class="form-item">
+                    <input id="name" type="text" placeholder="Name" required>
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-item">
+                    <input id="email" type="email" placeholder="Email Address" required>
+                    <label for="email">Email Address</label>
+                </div>
+                <div class="form-item">
+                    <input id="phone" type="tel" placeholder="Phone Number" required>
+                    <label for="phone">Phone</label>
+                </div>
+                <div class="form-item">
+                    <textarea id="message" rows="5" placeholder="Message" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+            <div>
+                <p>Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my
+                    resume, tips on how to solve your sudoku, random questions about the universe and the meaning of
+                    life, or even if only for some nice Fika here in stunning Toronto... just feel free to drop me a
+                    line anytime.</p>
+                <p>I promise to reply A.S.A.P</p>
+                <p>Note: No spam/soliciting pour moi, merci :)</p>
             </div>
-            <div class="form-item">
-                <input id="email" type="email" placeholder="Email Address" required>
-                <label for="email">Email Address</label>
-            </div>
-            <div class="form-item">
-                <input id="phone" type="tel" placeholder="Phone Number" required>
-                <label for="phone">Phone</label>
-            </div>
-            <div class="form-item">
-                <textarea id="message" rows="5" placeholder="Message" required></textarea>
-                <label for="message">Message</label>
-            </div>
-        </form>
+        </div>
+    </section>
+    <div class="scroll-top">
+        <a href="#top" class="button scrollable"><i class="fa fa-chevron-up"></i></a>
     </div>
-    <br>
-    <button type="submit">send</button>
-        <div></div>
-</section>
-<div>
-
-</div>
-
-
 </main>
 <!--footer section-->
 <footer>
@@ -107,13 +140,13 @@
             <ul>
                 <li>
                     <a href="https://www.linkedin.com/in/hallaathrad" class="button social">
-                    <i class="fa fa-fw fa-linkedin"></i>
+                        <i class="fa fa-fw fa-linkedin"></i>
                     </a>
                 </li>
                 <li>
-                 <a href="https://github.com/hallaathrad" class="button social">
-                     <i class="fa fa-fw fa-github"></i>
-                 </a>
+                    <a href="https://github.com/hallaathrad" class="button social">
+                        <i class="fa fa-fw fa-github"></i>
+                    </a>
                 </li>
                 <li>
                     <a href="https://twitter.com/hallaathrad" class="button social">
@@ -126,12 +159,14 @@
                     </a>
                 </li>
                 <li></li>
+                <ZA>QW</ZA>
                 <li></li>
             </ul>
         </div>
     </div>
     <div id="footer-below">qlip ©
-        <script>document.write(new Date().getFullYear())</script>. All Rights Reversed.
+        <script>document.write(new Date().getFullYear())</script>
+        . All Rights Reversed.
     </div>
 </footer>
 <script src="./index.js"></script>

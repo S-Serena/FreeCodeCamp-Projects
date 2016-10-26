@@ -69,3 +69,16 @@ a:-webkit-any-link {
     margin-top:90px;
     border-radius: 3px;
 }
+
+.footer {
+    color: #ffffff;
+    box-sizing: border-box;
+    width: 600px;
+    padding:0 40px;
+    text-align: center;
+    margin:15px auto 30px auto;
+}
+
+.footer-href {
+    color: #FFFFFF;
+}

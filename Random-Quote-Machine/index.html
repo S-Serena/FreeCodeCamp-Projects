@@ -5,31 +5,33 @@
     <title>randomQuoteMachine</title>
     <script src="https://use.fontawesome.com/c74d9e0834.js"></script>
     <script src="./js/jquery.min.js"></script>
-    <link type="text/css" href="./index.css" rel="stylesheet" />
+    <link type="text/css" href="./index.css" rel="stylesheet"/>
 </head>
-<body class="background-color">
+<body class="changeBackgroundColor">
 <div>
     <div class="quote-box">
         <div class="quote-text">
-            <i class="fa fa-quote-left fa-2">
-                <span id="text">Less is more.</span>
-                </i>
+            <i class="fa fa-quote-left fa-2 changeColor">
+                <span id="motto" class="changeColor"></span>
+            </i>
         </div>
         <div class="quote-author">
-            <span class="text">- Serena Wang</span>
+            <span id="author" class="changeColor"></span>
         </div>
         <div class="quote-buttons">
-            <a class="button background-color" id="tweet-quote"
-               href="https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=%22Life%20is%20a%20banquet%2C%20and%20most%20poor%20suckers%20are%20starving%20to%20death!%22%20Auntie%20Mame" target="_blank">
+            <a class="button changeBackgroundColor" id="tweet-quote"
+               href="https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=%22Life%20is%20a%20banquet%2C%20and%20most%20poor%20suckers%20are%20starving%20to%20death!%22%20Auntie%20Mame"
+               target="_blank">
                 <i class="fa fa-twitter"></i>
             </a>
-            <button class="button background-color" id="new-quote">New quote</button>
+            <button class="button changeBackgroundColor" id="new-quote">New quote</button>
         </div>
     </div>
     <div class="footer">
-        by <a class="footer-href" href="https://codepen.io/hezag/">hezag</a>
+        by <a class="footer-href" href="http://xialeizhou.com">serena</a>
     </div>
 </div>
+<script src="./js/index.js" async="true" defer></script>
 
 </body>
 </html>
